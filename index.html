@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Captain Usopp">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- PAGE - HEADER -->
+    <header>
+        <nav>
+            <div class="sign-in">
+                <div class="account-present">
+                    <p>Already have an intuit account?</p>
+                    <a href="#">I forgot my UserId or Password</a>
+                </div>
+                <a href="#" class="btn btn-sign-in">
+                    <i class="material-icons">lock_outline</i>
+                    <span>Sign In</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- LOGO -->
+    <section>
+        <div class="main-logo">
+            <div class="logo-container">
+                <a href="#" class="logo"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products">
+        <div class="products-header">
+            <nav class="products-list">
+                <ul>
+                    <li class="product-mint">
+                        <span class="mint"></span>
+                        <a href="https://www.mint.com/" target="_blank"></a>
+                    </li>
+                    <li class="product-quickbook">
+                        <span class="quickbooks"></span>
+                        <a href="https://quickbooks.intuit.com/" target="_blank"></a>
+                    </li>
+                    <li class="product-turbotax">
+                        <span class="turbotax"></span>
+                        <a href="https://turbotax.intuit.com/" target="_blank"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- SIGN-UP FORM -->
+    <main>
+        <div class="sign-up-form-container">
+            <section class="sign-up">
+                <header class="create-account">
+                    <h2>Create an Intuit account</h2>
+                    <div>
+                        <p>One account for everything intuit, including Mint.</p>
+                        <a href="https://accounts-help.lc.intuit.com/questions/1582580-creating-an-account">Learn More</a>
+                    </div>
+                </header>
+                <form action="" method="post">
+                    <fieldset class="fieldset-email">
+                        <label id="label-email" class="form-label" for="email" >Email address</label>
+                        <div class="input-wrapper">
+                            <input type="email" name="email" id="email" class="form-input" maxlength="100"
+                            placeholder="You'll verify this later" autofocus required="required" autocomplete="off">
+                        </div>
+                        <div class="email-error-message"></div>
+                    </fieldset>
+                    <fieldset class="fieldset-phone">
+                        <label id="label-phone" class="form-label" for="phone" >Phone &#40;recommended&#41;</label>
+                        <div class="input-wrapper">
+                            <input type="tel" name="phone" id="phone" class="form-input" maxlength="30"
+                            placeholder="Helps with lost passwords and security" autocomplete="off">
+                        </div>
+                        <p>Standard call, messaging or data rates may apply.</p>
+                    </fieldset>
+                    <fieldset class="fieldset-password">
+                        <label id="label-password" class="form-label" for="password" >Password</label>
+                        <div class="input-wrapper">
+                            <input type="password" name="password" id="password" class="form-input" maxlength="50"
+                            placeholder="Don't reuse an old password" required="required" autocomplete="off">
+                            <span class="unlock-img"></span>
+                            <div class="password-error-message"></div>
+                        </div>
+                        <!-- To be udpated -->
+                        <div class="password-instructions"></div>
+                    </fieldset>
+                    <div class="sign-up-button">
+                        <button type="submit" name="sign-up" class="sign-up">
+                            <i class="material-icons">lock_outline</i>
+                            <span>Create Account</span>
+                        </button>
+                    </div>
+                </form>
+                <footer class="form-footer">
+                    <div class="terms-for-use">
+                        <span>By 
+                            <span>Clicking Create Account</span>
+                            , you agree to our
+                            <br>
+                            <a href="https://www.mint.com/terms" target="_blank">Terms</a>
+                            <span>&nbsp;and have read and acknowledge our&nbsp;</span>
+                            <a href="https://www.intuit.com/privacy/statement/" target="_blank">
+                                Global Privacy Statement.
+                            </a>
+                        </span>
+                        <p>
+                            <strong>Updated on December 3, 2020</strong>
+                        </p>
+                    </div>
+                </footer>
+            </section>
+            <div class="captcha">
+                <span>
+                    <p>Invisible reCAPTCHA by Google 
+                        <a href="https://www.google.com/intl/en/policies/privacy/" target="_blank">Privacy Policy</a>
+                         and 
+                        <a href="https://www.google.com/intl/en/policies/terms/" target="_blank">Terms of Use.</a>
+                    </p>
+                </span>
+            </div>
+        </div>
+    </main>
+
+    <!-- PAGE - FOOTER -->
+    <footer>
+        <div class="footer">
+            <div class="footer_links">
+                <nav class="footer_links-nav">
+                    <ul>
+                        <li>
+                            <a href="https://www.intuit.com/legal/">Legal</a>
+                        </li>
+                        <li>
+                            <a href="https://www.intuit.com/privacy/statement/">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="https://www.intuit.com/privacy/statement/">Security</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <p>
+                    &copy; 2020 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademark of Intuit Inc.
+                </p>
+                <p>
+                    Terms and condition, feature, support, pricing and service options subject to change without notice.
+                </p>
+            </div>
+            <div class="privacy-modal">
+                <div>Privacy Settings</div>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+</html>
